@@ -1,0 +1,380 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General Body Styling */
+  body {
+    font-family: Arial, sans-serif; 
+    line-height: 1.6;
+    padding: 0px;
+  }
+  
+  /* Header Section */
+  header {
+    background: #a74de2; 
+    color: #fff; 
+    padding: 20px; 
+    position:fixed; 
+    width: 100%; 
+    top: 0; 
+    z-index: 1000; 
+  }
+  
+  nav ul {
+    display: flex; 
+    justify-content: center; 
+    list-style: none; 
+  }
+  
+  nav a {
+    color: #fff; 
+    padding: 10px; 
+    text-decoration:dotted; 
+  }
+  
+  nav a:hover {
+      background: #bc387e; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /* Hero Section */
+  #hero {
+    background: #f4f4f4; 
+    padding: 100px; 
+    text-align: center; 
+  }
+  
+  #hero h1 {
+    font-size: 50px; 
+  }
+  
+  /* Basic Styling Section */
+  #basic-styling {
+    padding: 40px; 
+    background: #7fd7f8; 
+  }
+  
+  .basic-styling-examples .text-color {
+    color: #bfc72f; 
+  }
+  
+  .basic-styling-examples .text-alignment {
+    justify-content: end;
+    justify-items: flex-start;
+    text-align:center; 
+  }
+  
+  .basic-styling-examples .text-font {
+    font-family: "Courier New", Courier, monospace; 
+  }
+  
+  /* Layouts Section */
+  #layouts {
+    padding: 20px; 
+    background: #ece2e2; 
+  }
+  
+  .flexbox-container {
+    display: flex; 
+    justify-content: space-around; 
+    margin-bottom: 50px; 
+   }
+   
+   .flexbox img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    display: block;
+   }
+  
+  .grid-container {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem; 
+  }
+  
+  .grid-item {
+    background: #2ecc71; 
+    color: #fff; 
+    padding: 30px; 
+    text-align: center; 
+  }
+  
+  /* Positioning Section */
+  #positioning {
+    padding: 20px; 
+    background: #fff; 
+  }
+  
+  .positioning-container {
+    position: relative; 
+    height: 300px; 
+    border: 1px solid #ddd; 
+    margin-bottom: 20px; 
+  }
+  
+  .relative-box {
+    position: relative; 
+    top: 20px; 
+    left: 20px; 
+    background: #527a95; 
+    color: #fff; 
+    padding: 10px; 
+  }
+  
+  .absolute-box {
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    background: #34c51a; 
+    color: #fff; 
+    padding: 10px; 
+  }
+  
+  .fixed-box {
+    position: fixed; 
+    bottom: 20px; 
+    left: 20px; 
+    background: #f1c40f; 
+    color: #fff; 
+    padding: 10px; 
+  }
+  
+  .sticky-box {
+     position:-webkit-sticky; 
+    top: 0; 
+    background: #e33f97; 
+    color: #fff; 
+    padding: 30px; 
+  }
+  
+  /* Backgrounds Section */
+  #backgrounds {
+    padding: 100px; 
+    background: #b7ababa4; 
+  }
+  
+  .background-image {
+    background: url("https://wallpapercave.com/wp/fh5HBRl.jpg")
+      no-repeat center center/cover; 
+      height:800px;
+      color: white;
+    margin-bottom: 100px; 
+    background-size: cover;
+  }
+  
+  .background-gradient {
+    background: linear-gradient(
+      to right,
+      #36a4e8,
+      #db769d
+    ); 
+    height: 200px; 
+  }
+  .radial-gradient-component {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background: radial-gradient(circle, #c07b21, #261fa8);
+    border-radius: 10px;
+  }
+  
+  /* Borders Section */
+  #borders {
+    padding: 20px; 
+    background: #fff; 
+  }
+  
+  .borders-container div {
+    margin-bottom: 10px; 
+    padding: 10px; 
+    text-align: center; 
+  }
+  
+  .border-solid {
+    border: 10px solid #1f9d4d; 
+    text-align: center;
+  }
+  
+  .border-dashed {
+    border: 10px dashed #443feb; 
+    text-align: center;
+  }
+  
+  .border-dotted {
+    border: 10px dotted #cd3dc1; 
+    text-align: center;
+  }
+  
+  .border-radius {
+    border: 10px solid #7e9911; 
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Box Model Section */
+  #box-model {
+    padding: 20px;
+    background: #d9d5d5; 
+  }
+  
+  .box-model-container div {
+    margin-bottom: 10px; 
+    padding: 10px; 
+    text-align: center; 
+  }
+  
+  .box-padding {
+    background: #13ce89; 
+    color: #fff; 
+    padding: 20px; 
+  }
+  
+  .box-margin {
+    background: #943385; 
+    color: #fff; 
+    margin: 20px; 
+  }
+  
+  .box-border {
+    background: hsl(197, 54%, 52%); 
+    color: #fff; 
+    border: 5px solid #fff; 
+ }
+  
+  .box-content {
+    background: #646e68; 
+    color: #fff; 
+    content: "Box with content"; 
+  }
+  
+  /* Transitions and Animations Section */
+  #transitions {
+    padding: 20px;
+    background: #fff;
+  }
+  
+  .transition-box {
+    background: #18eeee; 
+    color: #fff; 
+    padding: 10px; 
+    text-align: center; 
+    transition: background 0.3s ease; 
+  }
+  
+  .transition-box:hover {
+    background: #ba5fcc; 
+  }
+  
+  @keyframes example-animation {
+    0% {
+      background: #8ec837; 
+      transform: translateX(0); 
+    }
+    50% {
+      background: #1aafd4; 
+      transform: translateX(50px); 
+    }
+    100% {
+      background: #b5056e; 
+      transform: translateX(0); 
+    }
+  }
+  
+  .animation-box {
+    background: #e74c3c; 
+    color: #fff; 
+    padding: 10px; 
+    text-align: center; 
+    animation: example-animation 3s infinite; 
+  }
+  
+  /* Typography Section */
+  #typography {
+    padding: 20px; 
+    background: #f4f4f4; 
+  }
+  
+  .typography-container p {
+    margin-bottom: 10px; 
+    padding: 10px; 
+    text-align: center; 
+  }
+  
+  .font-family {
+    font-family: "Courier New", Courier, monospace; 
+  }
+  
+  .font-size {
+    font-size: 10px; 
+  }
+  
+  .font-weight {
+    font-weight: bold; 
+  }
+  
+  .line-height {
+    line-height: 2; 
+  }
+  
+  .letter-spacing {
+    letter-spacing: 2px; 
+  }
+  
+  /* Display Section */
+  #display {
+    padding: 20px; 
+    background: #fff; 
+  }
+  
+  .display-container div {
+    margin-bottom: 20px; 
+    padding: 20px; 
+    text-align: center; 
+  }
+  
+  .display-block {
+    display: block; 
+    background: #c222bf; 
+    color: #fff; 
+  }
+  
+  .display-inline {
+    display: inline; 
+    background: #9cd540; 
+    color: #fff; 
+  }
+  
+  .display-flex {
+    display: flex; 
+    justify-content: center; 
+    background: #4b9dc3; 
+    color: #fff; 
+  }
+  
+  .display-grid {
+    display: grid; 
+    place-items: center; 
+    background: #f1c40f; 
+    color: #fff; 
+  }
+  
+  .display-none {
+    display: none; 
+  }
+  
+  /* Footer */
+  footer {
+    background: #333; 
+    color: #fff; 
+    text-align: center; 
+    padding: 10px; 
+  }
